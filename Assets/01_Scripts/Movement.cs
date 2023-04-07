@@ -1,18 +1,24 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-public class Movement : MonoBehaviour
-{
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+public class Movement : MonoBehaviour {
 
-    // Update is called once per frame
-    void Update()
-    {
+    public float speed;
+
+    private float currentVelocity = 0;
+
+    private void Update() {
+
+        float horizontal = 0;
         
+        if(Input.GetKey(KeyCode.W))
+        {
+            horizontal++;
+        }
+        
+        if(Input.GetKey(KeyCode.S))
+        {
+            horizontal--;
+        }
+        transform.position += new Vector3(horizontal, 0, 0 ) * speed * Time.deltaTime;
     }
 }
