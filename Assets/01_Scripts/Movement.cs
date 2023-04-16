@@ -277,7 +277,7 @@ public class Movement : MonoBehaviour {
 			}
 
 			if (flyDown) {
-				//gameOver
+				Manager.Instance.InitDie();
 			}
 			isMoving = false;
 		}
