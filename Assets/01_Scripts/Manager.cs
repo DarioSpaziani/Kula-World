@@ -3,118 +3,137 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Manager : Singleton<Manager> {
+public class Manager : Singleton<Manager>
+{
+    private int actualScore;
+    private int scoreToReach;
+    public int bonusTime;
+    public int levelTime;
+    private float initTime;
 
-	private int actualScore;
-	private int scoreToReach;
-	public int bonusTime;
-	public int levelTime;
-	private float initTime;
-	
-	public bool isGameFinished, canFinish;
-	public bool isTimePaused;
-	
-	public GameObject finishTab;
-	public GameObject ball;
+    public bool isGameFinished, canFinish;
+    public bool isTimePaused;
 
-	public MeshRenderer mExit;
-	
-	public TextMeshProUGUI finishText;
-	public TextMeshProUGUI timerText;
-	
-	public Material[] skins;
+    public GameObject finishTab;
+    public GameObject ball;
 
-	private void Awake() {
-		OnReload();
-	}
+    public MeshRenderer mExit;
 
-	private void Start() {
-		finishTab.SetActive(false);
-		ball.GetComponent<MeshRenderer>().sharedMaterial = skins[MenuManager.skinSelected];
-		
-		scoreToReach = FindObjectsOfType<Bottle>().Length;
-		mExit.sharedMaterial.color = Color.red;
+    public TextMeshProUGUI finishText;
+    public TextMeshProUGUI timerText;
 
-		StartCoroutine(MainRoutine());
-		
-	}
+    public Material[] skins;
 
-	private IEnumerator MainRoutine() {
+    private void Awake()
+    {
+        OnReload();
+    }
 
-		StartCoroutine(TimeRoutine());
-		
-		while (actualScore != scoreToReach) {
-			yield return null;
-		}
+    private void Start()
+    {
+        finishTab.SetActive(false);
+        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[MenuManager.skinSelected];
 
-		canFinish = true;
-		mExit.sharedMaterial.color = Color.green;
-	}
+        scoreToReach = FindObjectsOfType<Bottle>().Length;
+        mExit.sharedMaterial.color = Color.red;
 
-	private IEnumerator TimeRoutine() {
-		initTime = Time.time;
+        StartCoroutine(MainRoutine());
+    }
 
-		while (Time.time < levelTime + initTime) 
-		{
-			if (!isTimePaused) {
-				timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
-			}
-			else 
-				timerText.text = "BONUS TIME!!";
-			yield return null;
-		}
+    private IEnumerator MainRoutine()
+    {
+        StartCoroutine(TimeRoutine());
 
-		if (!isGameFinished) {
-			ball.GetComponentInParent<Movement>().enabled = false;
-			ball.SetActive(false);
-			finishTab.SetActive(true);
-			finishText.text = "TIME IS OVER!";
-		}
-	}
-	
-	public void PauseTime() {
-		isTimePaused = true;
-		StartCoroutine(StopPause());
-	}
+        while (actualScore != scoreToReach)
+        {
+            yield return null;
+        }
 
-	private IEnumerator StopPause() {
-		yield return new WaitForSeconds(bonusTime);
-		isTimePaused = false;
-		initTime += bonusTime;
-	}
+        canFinish = true;
+        mExit.sharedMaterial.color = Color.green;
+    }
 
-	public void Score() {
-		actualScore++;
-	}
-	
-	public void FinishLevel() {
-		print("aaa");
-		isGameFinished = true;
-		finishText.text = "YOU WIN!";
-		ball.GetComponentInParent<Movement>().enabled = false;
-		ball.SetActive(false);
-		finishTab.SetActive(true); 
-	}
+    private IEnumerator TimeRoutine()
+    {
+        initTime = Time.time;
 
-	public void Restart() {
-		SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-	}
+        while (Time.time < levelTime + initTime)
+        {
+            if (!isTimePaused)
+            {
+                timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
+            }
+            else
+                timerText.text = "BONUS TIME!!";
 
-	public void QuitToMenu() {
-		SceneManager.LoadScene(0);
-	}
+            yield return null;
+        }
 
-	public void InitDie() {
-		StartCoroutine(Die());
-	}
+        if (!isGameFinished)
+        {
+            AudioManager.Instance.PlayLoseSound();
+            ball.GetComponentInParent<Movement>().enabled = false;
+            ball.SetActive(false);
+            finishTab.SetActive(true);
+            finishText.text = "TIME IS OVER!";
+        }
+    }
 
-	private IEnumerator Die() {
-		finishText.text = "YOU DIED! RETRY.";
-		ball.GetComponentInParent<Movement>().enabled = false;
-		ball.SetActive(false);
+    public void PauseTime()
+    {
+        AudioManager.Instance.PlayBonusSound();
+        isTimePaused = true;
+        StartCoroutine(StopPause());
+    }
 
-		yield return new WaitForSeconds(1f);
-		
-		finishTab.SetActive(true);
-	}
+    private IEnumerator StopPause()
+    {
+        yield return new WaitForSeconds(bonusTime);
+        isTimePaused = false;
+        initTime += bonusTime;
+    }
+
+    public void Score()
+    {
+        AudioManager.Instance.PlayBottleSound();
+        actualScore++;
+    }
+
+    public void FinishLevel()
+    {
+        AudioManager.Instance.PlayWinSound();
+        isGameFinished = true;
+        finishText.text = "YOU WIN!";
+        ball.GetComponentInParent<Movement>().enabled = false;
+        ball.SetActive(false);
+        finishTab.SetActive(true);
+    }
+
+    public void Restart()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+    }
+
+    public void QuitToMenu()
+    {
+        SceneManager.LoadScene(0);
+    }
+
+    public void InitDie()
+    {
+        
+        StartCoroutine(Die());
+        AudioManager.Instance.PlayLoseSound();
+    }
+
+    private IEnumerator Die()
+    {
+        finishText.text = "YOU DIED! RETRY.";
+        ball.GetComponentInParent<Movement>().enabled = false;
+        ball.SetActive(false);
+
+        yield return new WaitForSeconds(1f);
+
+        finishTab.SetActive(true);
+    }
 }

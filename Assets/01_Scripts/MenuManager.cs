@@ -9,13 +9,16 @@ public class MenuManager : MonoBehaviour {
     private void Start() {
         selectors[0].SetActive(true);
         skinSelected = 0;
+        DontDestroyOnLoad(AudioManager.Instance);
     }
 
     public void StartGame() {
+        AudioManager.Instance.PlayBonusSound();
         SceneManager.LoadScene(1);
     }
 
     public void ExitGame() {
+        AudioManager.Instance.PlayLoseSound();
         Application.Quit();
     }
 

@@ -5,13 +5,11 @@ public class Bottle : MonoBehaviour
 {
 
     public Image uiBottle;
-    
-    
+
     private void OnTriggerEnter(Collider other) {
         if (other.CompareTag("Player"))
         {
-            //uiBottle.color = Color.white;
-            print("Score");
+            AudioManager.Instance.PlayBottleSound();
             Manager.Instance.Score();
             Destroy(gameObject); 
         }
