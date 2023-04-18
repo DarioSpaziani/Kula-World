@@ -18,6 +18,8 @@ public class Movement : MonoBehaviour {
 	public RollingBall rollingBall;
 	
 	#endregion
+
+	public Animator ballAnim;
 	
 	private void Start() {
 		RecalculateRay();
@@ -229,6 +231,8 @@ public class Movement : MonoBehaviour {
 			yield return null;
 		}
 		isMoving = false;
+		 
+		ballAnim.Play("Jump", -1);
 	}
 
 	private IEnumerator SmoothMoveAndJump(float jumpOffset, float moveOffset) {
@@ -269,12 +273,15 @@ public class Movement : MonoBehaviour {
 			}
 
 			targetPos = transform.position - transform.up * landingOffset;
-			while (Vector3.Distance(transform.position, targetPos) > 0.0001f) {
+			while (Vector3.Distance(transform.position, targetPos) > 0.0001f)
+			{
 				float step = 2 * speed * Time.deltaTime;
 				transform.position = Vector3.MoveTowards(transform.position, targetPos, step);
 				rollingBall.Roll(-step * 200);
 				yield return null;
 			}
+			
+			ballAnim.Play("Jump", -1);
 
 			if (flyDown) {
 				Manager.Instance.InitDie();

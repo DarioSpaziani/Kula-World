@@ -5,11 +5,11 @@ using UnityEngine.SceneManagement;
 
 public class Manager : Singleton<Manager> {
 
-	private int actualScore = 0;
+	private int actualScore;
 	private int scoreToReach;
 	public int bonusTime;
 	public int levelTime;
-	private float initTime = 0;
+	private float initTime;
 	
 	public bool isGameFinished, canFinish;
 	public bool isTimePaused;
@@ -71,9 +71,7 @@ public class Manager : Singleton<Manager> {
 			finishText.text = "TIME IS OVER!";
 		}
 	}
-
-
-
+	
 	public void PauseTime() {
 		isTimePaused = true;
 		StartCoroutine(StopPause());
@@ -90,6 +88,7 @@ public class Manager : Singleton<Manager> {
 	}
 	
 	public void FinishLevel() {
+		print("aaa");
 		isGameFinished = true;
 		finishText.text = "YOU WIN!";
 		ball.GetComponentInParent<Movement>().enabled = false;
