@@ -1505,6 +1505,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 23129052424745626, guid: 0e4a948d2cf7311418813c6015bddd28, type: 3}
+      propertyPath: m_Materials.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 23129052424745626, guid: 0e4a948d2cf7311418813c6015bddd28, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0167eb50564eeaf47a652dfaca6c6c7c, type: 2}
+    - target: {fileID: 23129052424745626, guid: 0e4a948d2cf7311418813c6015bddd28, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 98efbc840125da4419c81b1a686cb1ca, type: 2}
+    - target: {fileID: 33107516539137192, guid: 0e4a948d2cf7311418813c6015bddd28, type: 3}
+      propertyPath: m_Mesh
+      value: 
+      objectReference: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
     - target: {fileID: 95048871561428364, guid: 0e4a948d2cf7311418813c6015bddd28, type: 3}
       propertyPath: m_Avatar
       value: 
@@ -2330,7 +2346,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 76.35
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4920,8 +4936,8 @@ MonoBehaviour:
   finishText: {fileID: 1025478277}
   timerText: {fileID: 767729068}
   skins:
-  - {fileID: 2100000, guid: 44f72532feaa491469a6129fb0300135, type: 2}
-  - {fileID: 2100000, guid: 17bea1b56c28eb44995aa8cac9612440, type: 2}
+  - {fileID: 2100000, guid: 5661465b972ec334e9ba10ef077dd060, type: 2}
+  - {fileID: 2100000, guid: 910563b6a77bb624b84580421edaad3d, type: 2}
 --- !u!4 &1765009398
 Transform:
   m_ObjectHideFlags: 0
