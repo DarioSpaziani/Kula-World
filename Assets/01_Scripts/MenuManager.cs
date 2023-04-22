@@ -5,20 +5,25 @@ using UnityEngine.SceneManagement;
 public class MenuManager : MonoBehaviour {
     public GameObject[] selectors;
     public static int skinSelected;
+    private AudioManager audioManager;
+
+    private void Awake()
+    {
+        audioManager = FindObjectOfType<AudioManager>();
+    }
 
     private void Start() {
         selectors[0].SetActive(true);
         skinSelected = 0;
-        DontDestroyOnLoad(AudioManager.Instance);
     }
 
     public void StartGame() {
-        AudioManager.Instance.PlayBonusSound();
+        audioManager.PlayBonusSound();
         SceneManager.LoadScene(1);
     }
 
     public void ExitGame() {
-        AudioManager.Instance.PlayLoseSound();
+        audioManager.PlayLoseSound();
         Application.Quit();
     }
 

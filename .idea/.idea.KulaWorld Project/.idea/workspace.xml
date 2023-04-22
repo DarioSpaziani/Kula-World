@@ -11,7 +11,12 @@
     <setting file="file://$USER_HOME$/Documents/ProgrammazioneDocumenti/Scripts/Singleton/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ripasso/Assets/00-Platform&amp;Fight/00-Scripts/ScriptsPlatform/MovementPhysicPlatform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
-  <component name="RunManager">
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true"
+  }
+}]]></component>
+  <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Unity Versions\2021.3.18f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Unity\Progetti Miei\KulaWorld\KulaWorld Project&quot; -debugCodeOptimization" />

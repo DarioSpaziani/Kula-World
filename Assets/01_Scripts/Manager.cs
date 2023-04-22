@@ -24,9 +24,11 @@ public class Manager : Singleton<Manager>
 
     public Material[] skins;
 
+    private AudioManager audioManager;
+
     private void Awake()
     {
-        OnReload();
+        audioManager = FindObjectOfType<AudioManager>();
     }
 
     private void Start()
@@ -71,7 +73,7 @@ public class Manager : Singleton<Manager>
 
         if (!isGameFinished)
         {
-            AudioManager.Instance.PlayLoseSound();
+            audioManager.PlayLoseSound();
             ball.GetComponentInParent<Movement>().enabled = false;
             ball.SetActive(false);
             finishTab.SetActive(true);
@@ -81,7 +83,11 @@ public class Manager : Singleton<Manager>
 
     public void PauseTime()
     {
-        AudioManager.Instance.PlayBonusSound();
+        if (audioManager == null)
+        {
+            
+        }
+        audioManager.PlayBonusSound();
         isTimePaused = true;
         StartCoroutine(StopPause());
     }
@@ -95,13 +101,13 @@ public class Manager : Singleton<Manager>
 
     public void Score()
     {
-        AudioManager.Instance.PlayBottleSound();
+        audioManager.PlayBottleSound();
         actualScore++;
     }
 
     public void FinishLevel()
     {
-        AudioManager.Instance.PlayWinSound();
+        audioManager.PlayWinSound();
         isGameFinished = true;
         finishText.text = "YOU WIN!";
         ball.GetComponentInParent<Movement>().enabled = false;
@@ -123,7 +129,7 @@ public class Manager : Singleton<Manager>
     {
         
         StartCoroutine(Die());
-        AudioManager.Instance.PlayLoseSound();
+        audioManager.PlayLoseSound();
     }
 
     private IEnumerator Die()
