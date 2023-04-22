@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -25,7 +26,7 @@ public class Manager : Singleton<Manager>
     public Material[] skins;
 
     private AudioManager audioManager;
-
+    
     private void Awake()
     {
         audioManager = FindObjectOfType<AudioManager>();
@@ -34,13 +35,14 @@ public class Manager : Singleton<Manager>
     private void Start()
     {
         finishTab.SetActive(false);
-        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[MenuManager.skinSelected];
+        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
 
         scoreToReach = FindObjectsOfType<Bottle>().Length;
         mExit.sharedMaterial.color = Color.red;
 
         StartCoroutine(MainRoutine());
     }
+    
 
     private IEnumerator MainRoutine()
     {

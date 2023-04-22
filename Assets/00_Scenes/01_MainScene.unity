@@ -97,8 +97,8 @@ LightmapSettings:
     m_ExportTrainingData: 0
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
-  m_LightingDataAsset: {fileID: 0}
-  m_LightingSettings: {fileID: 0}
+  m_LightingDataAsset: {fileID: 112000000, guid: a7c3722507bc8884fbfd09c8f615d1f3, type: 2}
+  m_LightingSettings: {fileID: 4890085278179872738, guid: 9ae99e3c741f57044b06a11656b80da2, type: 2}
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -2346,7 +2346,7 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 76.35
+  m_fontSize: 100
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
@@ -4805,7 +4805,7 @@ GameObject:
   - component: {fileID: 1716849844}
   - component: {fileID: 1716849843}
   m_Layer: 5
-  m_Name: MainCanvas
+  m_Name: GameCanvas
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -4938,6 +4938,10 @@ MonoBehaviour:
   skins:
   - {fileID: 2100000, guid: 5661465b972ec334e9ba10ef077dd060, type: 2}
   - {fileID: 2100000, guid: 910563b6a77bb624b84580421edaad3d, type: 2}
+  - {fileID: 2100000, guid: 0167eb50564eeaf47a652dfaca6c6c7c, type: 2}
+  - {fileID: 2100000, guid: daa7f57885cce4e45ad304d307ef9330, type: 2}
+  - {fileID: 2100000, guid: 1eec5b9567f111f40a10513b69d7a224, type: 2}
+  - {fileID: 2100000, guid: 98efbc840125da4419c81b1a686cb1ca, type: 2}
 --- !u!4 &1765009398
 Transform:
   m_ObjectHideFlags: 0
