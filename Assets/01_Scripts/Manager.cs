@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,12 +26,6 @@ public class Manager : Singleton<Manager>
 
     public Material[] skins;
 
-    private AudioManager audioManager;
-    
-    private void Awake()
-    {
-        audioManager = FindObjectOfType<AudioManager>();
-    }
 
     private void Start()
     {
@@ -42,7 +37,6 @@ public class Manager : Singleton<Manager>
 
         StartCoroutine(MainRoutine());
     }
-    
 
     private IEnumerator MainRoutine()
     {
@@ -75,7 +69,6 @@ public class Manager : Singleton<Manager>
 
         if (!isGameFinished)
         {
-            audioManager.PlayLoseSound();
             ball.GetComponentInParent<Movement>().enabled = false;
             ball.SetActive(false);
             finishTab.SetActive(true);
@@ -85,11 +78,6 @@ public class Manager : Singleton<Manager>
 
     public void PauseTime()
     {
-        if (audioManager == null)
-        {
-            
-        }
-        audioManager.PlayBonusSound();
         isTimePaused = true;
         StartCoroutine(StopPause());
     }
@@ -103,13 +91,11 @@ public class Manager : Singleton<Manager>
 
     public void Score()
     {
-        audioManager.PlayBottleSound();
         actualScore++;
     }
 
     public void FinishLevel()
     {
-        audioManager.PlayWinSound();
         isGameFinished = true;
         finishText.text = "YOU WIN!";
         ball.GetComponentInParent<Movement>().enabled = false;
@@ -122,6 +108,16 @@ public class Manager : Singleton<Manager>
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
+    public void BackLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
+
+    public void NextLevel()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
     public void QuitToMenu()
     {
         SceneManager.LoadScene(0);
@@ -129,9 +125,8 @@ public class Manager : Singleton<Manager>
 
     public void InitDie()
     {
-        
+
         StartCoroutine(Die());
-        audioManager.PlayLoseSound();
     }
 
     private IEnumerator Die()
@@ -144,4 +139,18 @@ public class Manager : Singleton<Manager>
 
         finishTab.SetActive(true);
     }
+
+    private void Update()
+    {
+        SkipLevelDebug();
+    }
+
+    private void SkipLevelDebug()
+    {
+        if (Input.GetKey(KeyCode.Escape))
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
+    }
+
 }

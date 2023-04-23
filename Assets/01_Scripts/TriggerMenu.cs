@@ -15,7 +15,7 @@ public class TriggerMenu : MonoBehaviour
         Scene currentScene = SceneManager.GetActiveScene();
 
         string sceneName = currentScene.name;
-        if (sceneName == "01_MainScene")
+        if (sceneName != "00_Menu")
         {
             mainMenu.gameObject.SetActive(false);
             skinMenu.gameObject.SetActive(false);

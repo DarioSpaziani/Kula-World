@@ -4,26 +4,109 @@
     <list default="true" id="aef1d1f4-e373-44ee-a6a2-84ea35e0585a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/Lighting Settings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/Lighting Settings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Exit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Exit.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/MenuManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/MenuManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03_Prefabs/MenuCanvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_Prefabs/MenuCanvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin6.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin6.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/IMG_1804.PNG" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/IMG_1804.PNG.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Singleton.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.shadergraph" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.shadergraph.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.shader" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.shader.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03_Prefabs/GroundBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_Prefabs/GroundBlock.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Models/Cube/Materials/CubeVariant2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Models/Cube/Materials/CubeVariant2.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/KulaKula.fbx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/KulaKula.fbx.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin0.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin0.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin1.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin1.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin2.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin2.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle0Complete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle0Complete.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle1Complete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle1Complete.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle2Complete.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle2Complete.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin3_Texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin3_Texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin4_Texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin4_Texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin5_Texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin5_Texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin6_Texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin6_Texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin7_Texture.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin7_Texture.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/SkinVuota.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/SkinVuota.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_1.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_2.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_2.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_3.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_3.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_4.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_4.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_5.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_5.png.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Idle.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Idle.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Jump.anim" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Jump.anim.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Kula.controller" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Kula.controller.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08_Font.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular SDF.asset" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular SDF.asset.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular.ttf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular.ttf.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -45,24 +128,24 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Discover.Launch.Via.Unity": "true",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Discover.Launch.Via.Unity&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "rider.external.source.directories": [
-      "C:\\Users\\da_ry\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache",
-      "C:\\Users\\da_ry\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache",
-      "C:\\Users\\da_ry\\AppData\\Local\\Symbols\\src"
+  &quot;keyToStringList&quot;: {
+    &quot;rider.external.source.directories&quot;: [
+      &quot;C:\\Users\\da_ry\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\DecompilerCache&quot;,
+      &quot;C:\\Users\\da_ry\\AppData\\Roaming\\JetBrains\\Rider2022.3\\resharper-host\\SourcesCache&quot;,
+      &quot;C:\\Users\\da_ry\\AppData\\Local\\Symbols\\src&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\Unity\Unity Versions\2021.3.18f1\Editor\Unity.exe" />
@@ -109,7 +192,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1682197865453</updated>
-      <workItem from="1682197869652" duration="3710000" />
+      <workItem from="1682197869652" duration="4444000" />
+      <workItem from="1682256140017" duration="4464000" />
     </task>
     <servers />
   </component>
