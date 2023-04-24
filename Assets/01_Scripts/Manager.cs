@@ -140,17 +140,4 @@ public class Manager : Singleton<Manager>
         finishTab.SetActive(true);
     }
 
-    private void Update()
-    {
-        SkipLevelDebug();
-    }
-
-    private void SkipLevelDebug()
-    {
-        if (Input.GetKey(KeyCode.Escape))
-        {
-            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-        }
-    }
-
 }
