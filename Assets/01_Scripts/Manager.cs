@@ -9,12 +9,10 @@ public class Manager : Singleton<Manager>
 {
     private int actualScore;
     private int scoreToReach;
-    public int bonusTime;
-    public int levelTime;
+    
     private float initTime;
 
-    public bool isGameFinished, canFinish;
-    public bool isTimePaused;
+    public bool canFinish;
 
     public GameObject finishTab;
     public GameObject ball;
@@ -22,15 +20,14 @@ public class Manager : Singleton<Manager>
     public MeshRenderer mExit;
 
     public TextMeshProUGUI finishText;
-    public TextMeshProUGUI timerText;
-
-    public Material[] skins;
+    
+    
 
 
     private void Start()
     {
         finishTab.SetActive(false);
-        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
+        
 
         scoreToReach = FindObjectsOfType<Bottle>().Length;
         mExit.sharedMaterial.color = Color.red;
@@ -40,7 +37,7 @@ public class Manager : Singleton<Manager>
 
     private IEnumerator MainRoutine()
     {
-        StartCoroutine(TimeRoutine());
+        
 
         while (actualScore != scoreToReach)
         {
@@ -50,45 +47,7 @@ public class Manager : Singleton<Manager>
         canFinish = true;
         mExit.sharedMaterial.color = Color.green;
     }
-
-    private IEnumerator TimeRoutine()
-    {
-        initTime = Time.time;
-
-        while (Time.time < levelTime + initTime)
-        {
-            if (!isTimePaused)
-            {
-                timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
-            }
-            else
-                timerText.text = "BONUS TIME!!";
-
-            yield return null;
-        }
-
-        if (!isGameFinished)
-        {
-            ball.GetComponentInParent<Movement>().enabled = false;
-            ball.SetActive(false);
-            finishTab.SetActive(true);
-            finishText.text = "TIME IS OVER!";
-        }
-    }
-
-    public void PauseTime()
-    {
-        isTimePaused = true;
-        StartCoroutine(StopPause());
-    }
-
-    private IEnumerator StopPause()
-    {
-        yield return new WaitForSeconds(bonusTime);
-        isTimePaused = false;
-        initTime += bonusTime;
-    }
-
+    
     public void Score()
     {
         actualScore++;
@@ -96,7 +55,7 @@ public class Manager : Singleton<Manager>
 
     public void FinishLevel()
     {
-        isGameFinished = true;
+        canFinish = true;
         finishText.text = "YOU WIN!";
         ball.GetComponentInParent<Movement>().enabled = false;
         ball.SetActive(false);
