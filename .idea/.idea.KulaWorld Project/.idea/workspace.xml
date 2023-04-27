@@ -1,113 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="aef1d1f4-e373-44ee-a6a2-84ea35e0585a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_MainScene.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/Lighting Settings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/Lighting Settings.lighting.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Exit.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Exit.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Singleton.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Singleton.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/Fresnel.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.shadergraph" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/FresnelLerp.shadergraph.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.shader" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/02_Shaders/TwoColors.shader.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/03_Prefabs/GroundBlock.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_Prefabs/GroundBlock.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Models/Cube/Materials/CubeVariant2.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Models/Cube/Materials/CubeVariant2.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/BallUV3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/KulaKula.fbx" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/KulaKula.fbx.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin0.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin0.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin1.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin1.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin2.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin2.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin3.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin4.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Skin5.mat.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle0Complete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle0Complete.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle1Complete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle1Complete.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle2Complete.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Bottle2Complete.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin3_Texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin3_Texture.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin4_Texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin4_Texture.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin5_Texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin5_Texture.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin6_Texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin6_Texture.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin7_Texture.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/Textures/Skin7_Texture.jpg.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/SkinVuota.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/SkinVuota.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_0.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_1.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_1.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_2.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_2.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_3.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_3.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_4.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_4.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_5.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/06_Materials/UI/Skin_5.png.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/ColorPulse.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Idle.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Idle.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Jump.anim" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Jump.anim.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Kula.controller" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/07_Animations/Kula.controller.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08_Font.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular SDF.asset" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular SDF.asset.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular.ttf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/08_Font/PatuaOne-Regular.ttf.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/CurrentMaximizeLayout.dwlt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
-    </list>
+    <list default="true" id="aef1d1f4-e373-44ee-a6a2-84ea35e0585a" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -117,8 +11,16 @@
     <setting file="file://$USER_HOME$/Documents/ProgrammazioneDocumenti/Scripts/Singleton/Singleton.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" root0="FORCE_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/SkinManager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/08_ScriptableObject/SO_Bonus.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.shadergraph@12.1.10/Editor/Drawing/Blackboard/SGBlackboardCategory.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Nutty2DProject/Nutty2D/Assets/01_Scripts/Bottle.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../Nutty2DProject/Nutty2D/Assets/01_Scripts/Nutty.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/BarStatus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/Managers/NuttyManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/Managers/SaveAndLoadManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/Managers/TimeManager.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/NuttyController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/../../NuttyGotchi/NuttyGotchi/Assets/Scripts/NuttyStats.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/../../Ripasso/Assets/00-Platform&amp;Fight/00-Scripts/ScriptsPlatform/MovementPhysicPlatform.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MarkdownSettingsMigration">
