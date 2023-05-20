@@ -1,8 +1,4 @@
-using System;
-using Unity.VisualScripting;
 using UnityEngine;
-using Timer = System.Threading.Timer;
-
 
 public class Hourglass : MonoBehaviour
 {

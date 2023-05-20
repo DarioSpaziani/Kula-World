@@ -1154,6 +1154,71 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 1, y: 1, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!1001 &709785020
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 5698961791414579192, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: soBonus
+      value: 
+      objectReference: {fileID: 11400000, guid: 8edef078f3222594cbea462b4e57245f, type: 2}
+    - target: {fileID: 5698961791414579192, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: timerText
+      value: 
+      objectReference: {fileID: 47405500}
+    - target: {fileID: 5698961791414579193, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_Name
+      value: TimerGame
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5698961791414579199, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 75e3e73f76d73584b87c79101a21cd3d, type: 3}
 --- !u!1 &715431027
 GameObject:
   m_ObjectHideFlags: 0
@@ -1190,7 +1255,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -0.227}
   m_AnchorMin: {x: 0.40362498, y: 0.35000002}
   m_AnchorMax: {x: 0.59900004, y: 0.4203334}
-  m_AnchoredPosition: {x: -0.5, y: 0.000015258789}
+  m_AnchoredPosition: {x: -0.5, y: 0}
   m_SizeDelta: {x: -1, y: -2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &715431029

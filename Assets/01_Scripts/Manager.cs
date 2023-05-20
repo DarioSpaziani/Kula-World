@@ -1,7 +1,5 @@
-﻿using System;
-using System.Collections;
+﻿using System.Collections;
 using TMPro;
-using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -20,16 +18,19 @@ public class Manager : Singleton<Manager>
     public MeshRenderer mExit;
 
     public TextMeshProUGUI finishText;
-    
+
+    public Material[] skins;
     
 
 
     private void Start()
     {
-        finishTab.SetActive(false);
         
+        finishTab.SetActive(false);
+        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
 
         scoreToReach = FindObjectsOfType<Bottle>().Length;
+        canFinish = false;
         mExit.sharedMaterial.color = Color.red;
 
         StartCoroutine(MainRoutine());

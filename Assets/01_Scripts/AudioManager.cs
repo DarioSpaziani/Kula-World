@@ -1,28 +1,57 @@
+using System.Collections;
 using UnityEngine;
+
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource soundSource;
-
-    public AudioClip winSound, loseSound, bonusSound, bottleSound;
+    public AudioSource audioSource;
+    public AudioSource sfxAudioSource;
+    public float timerModifyVolume;
     
+    public AudioClip musicSound, winSound, loseSound, bonusSound, bottleSound;
+
+
     public void PlayWinSound()
     {
-        soundSource.PlayOneShot(winSound);
+        sfxAudioSource.clip = winSound;
+        audioSource.PlayOneShot(winSound);
     }
     
     public void PlayLoseSound()
     {
-        soundSource.PlayOneShot(loseSound);
+        sfxAudioSource.clip = loseSound;
+        audioSource.PlayOneShot(loseSound);
     }
     
     public void PlayBonusSound()
     {
-        soundSource.PlayOneShot(bonusSound);
+        sfxAudioSource.clip = bonusSound;
+        audioSource.PlayOneShot(bonusSound);
     }
     
     public void PlayBottleSound()
     {
-        soundSource.PlayOneShot(bottleSound);
+        sfxAudioSource.clip = bottleSound;
+        audioSource.PlayOneShot(bottleSound);
+    }
+    
+    IEnumerator FadeOutFadeInSong() {
+        float t = 0;
+        float initVolume = audioSource.volume;
+        while (t < timerModifyVolume) {
+            audioSource.volume = Mathf.Lerp(initVolume,0,t/timerModifyVolume);
+            t += Time.deltaTime;
+            yield return null;
+        }
+        audioSource.clip = musicSound;
+        audioSource.volume = 0;
+        audioSource.Play();
+        t = 0;
+        yield return new WaitForSeconds(0.2f);
+        while (t < timerModifyVolume) {
+            audioSource.volume = Mathf.Lerp(0,initVolume,t/timerModifyVolume);
+            t += Time.deltaTime;
+            yield return null;
+        }
     }
 }
