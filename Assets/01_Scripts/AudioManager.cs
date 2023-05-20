@@ -9,7 +9,13 @@ public class AudioManager : MonoBehaviour
     public float timerModifyVolume;
     
     public AudioClip musicSound, winSound, loseSound, bonusSound, bottleSound;
+    public AudioClip buttonPressedSound, jumpSound,exitLevelSound;
 
+    public void PlayJumpSound()
+    {
+        sfxAudioSource.clip = jumpSound;
+        audioSource.PlayOneShot(jumpSound);
+    }
 
     public void PlayWinSound()
     {
@@ -33,6 +39,18 @@ public class AudioManager : MonoBehaviour
     {
         sfxAudioSource.clip = bottleSound;
         audioSource.PlayOneShot(bottleSound);
+    }
+
+    public void PlayButtonPressed()
+    {
+        sfxAudioSource.clip = buttonPressedSound;
+        audioSource.PlayOneShot(buttonPressedSound);
+    }
+
+    public void PlayExitLevel()
+    {
+        sfxAudioSource.clip = exitLevelSound;
+        audioSource.PlayOneShot(exitLevelSound);
     }
     
     IEnumerator FadeOutFadeInSong() {

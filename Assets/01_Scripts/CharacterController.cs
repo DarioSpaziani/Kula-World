@@ -1,7 +1,8 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
-public class Movement : MonoBehaviour {
+public class CharacterController : MonoBehaviour {
 
 	#region Variables
 	
@@ -17,22 +18,26 @@ public class Movement : MonoBehaviour {
 
 	public RollingBall rollingBall;
 	
-	#endregion
-
 	public Animator ballAnim;
+
+	private AudioManager audioManager;
 	
-	private void Start() {
+	#endregion
+	
+	private void Start()
+	{
+		audioManager = FindObjectOfType<AudioManager>();
 		RecalculateRay();
 	}
 	
 	private void Update() {
-		if (Input.GetKey(KeyCode.Space)) {
-			if (Input.GetAxis("Vertical") > 0) {
-				JumpAndMove(2);
-			}
+		if (Input.GetKey(KeyCode.Space) && (Input.GetAxis("Vertical") > 0))
+		{
+			JumpAndMove(2);
 		}
-		
-		if (Input.GetKeyUp(KeyCode.Space)) {
+
+		if (Input.GetKeyUp(KeyCode.Space)) 
+		{
 			Jump();
 		}
 		
@@ -47,6 +52,7 @@ public class Movement : MonoBehaviour {
 			RotateRight();
 		}
 	}
+	
 
 	#region Raycast
 
@@ -290,7 +296,9 @@ public class Movement : MonoBehaviour {
 		}
 	}
 
-	private void Jump() {
+	private void Jump()
+	{
+		audioManager.PlayJumpSound();
 		StartCoroutine(SmoothJump(2));
 	}
 

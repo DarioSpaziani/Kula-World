@@ -46,11 +46,17 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: bfe263883587ce04ab6ae53cf055c002, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  soundSource: {fileID: 8919857684168039921}
+  audioSource: {fileID: 971722701416890234}
+  sfxAudioSource: {fileID: 8919857684168039921}
+  timerModifyVolume: 0
+  musicSound: {fileID: 8300000, guid: 5786e9e0906becc4ebd2ad984aafc285, type: 3}
   winSound: {fileID: 8300000, guid: d873b2d945760d24cbfe07437aef9820, type: 3}
   loseSound: {fileID: 8300000, guid: 5917c14e9347fed42851da542a6575d9, type: 3}
   bonusSound: {fileID: 8300000, guid: bfe6edb1098b9eb45a2510c3dcfb0160, type: 3}
   bottleSound: {fileID: 8300000, guid: 6ddcaee7be01b3343823034b0574c0c7, type: 3}
+  buttonPressedSound: {fileID: 8300000, guid: 2d6626b36d79c8044896187d79bbda37, type: 3}
+  jumpSound: {fileID: 8300000, guid: 6e5ea250321b5934ea806ee30c7627e0, type: 3}
+  exitLevelSound: {fileID: 8300000, guid: b423439db74db0946b2fe5bbdc020471, type: 3}
 --- !u!82 &971722701416890234
 AudioSource:
   m_ObjectHideFlags: 0
@@ -65,7 +71,7 @@ AudioSource:
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
-  Loop: 0
+  Loop: 1
   Mute: 0
   Spatialize: 0
   SpatializePostEffects: 0

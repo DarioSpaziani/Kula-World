@@ -3,14 +3,23 @@
   <component name="ChangeListManager">
     <list default="true" id="aef1d1f4-e373-44ee-a6a2-84ea35e0585a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.KulaWorld Project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/00_Menu.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/01_Level_01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/01_Level_01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/00_Scenes/02_Level_02.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/00_Scenes/02_Level_02.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/AudioManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Bottle.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Hourglass.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Hourglass.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/MainMenu.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Movement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/Movement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/RotationObjects.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/SkinManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/SkinManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/TimerGame.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/TimerGame.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/01_Scripts/TriggerMenu.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/03_Prefabs/AudioManager.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/03_Prefabs/AudioManager.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/04_Models/Exit/Exit.mat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/Layouts/default-2021.dwlt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/UserSettings/EditorUserSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +130,7 @@
       <workItem from="1682197869652" duration="4444000" />
       <workItem from="1682256140017" duration="4464000" />
       <workItem from="1683550548295" duration="2386000" />
-      <workItem from="1684611082181" duration="1992000" />
+      <workItem from="1684611082181" duration="5595000" />
     </task>
     <servers />
   </component>

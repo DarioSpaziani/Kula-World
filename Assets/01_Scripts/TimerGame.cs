@@ -44,7 +44,7 @@ public class TimerGame : MonoBehaviour
 
         if (!isGameFinished)
         {
-            manager.ball.GetComponentInParent<Movement>().enabled = false;
+            manager.ball.GetComponentInParent<CharacterController>().enabled = false;
             manager.ball.SetActive(false);
             manager.finishTab.SetActive(true);
             manager.finishText.text = "TIME IS OVER!";
