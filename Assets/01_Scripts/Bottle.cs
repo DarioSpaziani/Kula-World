@@ -1,26 +1,28 @@
-using System;
-using UnityEngine.UI;
 using UnityEngine;
+using UnityEngine.UI;
 
-public class Bottle : MonoBehaviour
+namespace _01_Scripts
 {
-
-    public Image uiBottle;
-    private AudioManager audioManager;
-
-    private void Awake()
+    public class Bottle : MonoBehaviour
     {
-        audioManager = FindObjectOfType<AudioManager>();
-    }
 
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Player"))
+        public Image uiBottle;
+        private AudioManager audioManager;
+
+        private void Awake()
         {
-            audioManager.PlayBottleSound();
+            audioManager = FindObjectOfType<AudioManager>();
+        }
+
+        private void OnTriggerEnter(Collider other) {
+            if (other.CompareTag("Player"))
+            {
+                audioManager.PlayBottleSound();
             
-            uiBottle.color = Color.white;
-            Manager.Instance.Score();
-            Destroy(gameObject); 
+                uiBottle.color = Color.white;
+                Manager.instance.Score();
+                Destroy(gameObject); 
+            }
         }
     }
 }

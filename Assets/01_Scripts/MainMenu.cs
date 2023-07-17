@@ -1,27 +1,28 @@
-using System;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class MainMenu : MonoBehaviour
+namespace _01_Scripts
 {
-    private AudioManager audioManager;
-    
-    
-    private void Awake()
+    public class MainMenu : MonoBehaviour
     {
-        audioManager = FindObjectOfType<AudioManager>();
-    }
-
-    public void StartGame() {
-        audioManager.PlayButtonPressed();
+        private AudioManager audioManager;
         
-        SceneManager.LoadScene(1);
-    }
+        private void Awake()
+        {
+            audioManager = FindObjectOfType<AudioManager>();
+        }
 
-    public void ExitGame() {
-        audioManager.PlayButtonPressed();
+        public void StartGame() {
+            audioManager.PlayButtonPressed();
         
-        Application.Quit();
-    }
+            SceneManager.LoadScene(1);
+        }
 
+        public void ExitGame() {
+            audioManager.PlayButtonPressed();
+        
+            Application.Quit();
+        }
+
+    }
 }

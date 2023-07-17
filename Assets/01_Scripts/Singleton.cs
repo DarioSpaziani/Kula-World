@@ -1,18 +1,21 @@
 ﻿using UnityEngine;
 
-public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
+namespace _01_Scripts
 {
-    public static T Instance;
-
-    public virtual void Awake()
+    public abstract class Singleton<T> : MonoBehaviour where T : MonoBehaviour
     {
-        if (!Instance)
+        public static T instance;
+
+        public virtual void Awake()
         {
-            Instance = this as T;
-        }
-        else
-        {
-            Destroy(gameObject);
+            if (!instance)
+            {
+                instance = this as T;
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
         }
     }
 }

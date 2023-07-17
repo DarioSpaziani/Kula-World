@@ -3,110 +3,146 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class Manager : Singleton<Manager>
+namespace _01_Scripts
 {
-    private int actualScore;
-    private int scoreToReach;
-    
-    private float initTime;
-
-    public bool canFinish;
-
-    public GameObject finishTab;
-    public GameObject ball;
-
-    public MeshRenderer mExit;
-
-    public TextMeshProUGUI finishText;
-
-    public Material[] skins;
-
-    private AudioManager audioManager;
-    
-    private void Start()
+    public class Manager : Singleton<Manager>
     {
-        audioManager = FindObjectOfType<AudioManager>();
-        
-        finishTab.SetActive(false);
-        ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
+        #region Variables
 
-        scoreToReach = FindObjectsOfType<Bottle>().Length;
-        canFinish = false;
-        mExit.sharedMaterial.color = Color.red;
+        private int actualScore;
+        private int scoreToReach;
+    
+        private float initTime;
 
-        StartCoroutine(PointRoutine());
-    }
+        public bool canFinish;
 
-    private IEnumerator PointRoutine()
-    {
-        while (actualScore != scoreToReach)
+        public GameObject finishTab;
+        public GameObject ball;
+        public GameObject gameUI;
+        public GameObject pause;
+        private TimerGame timerGame;
+
+        public MeshRenderer mExit;
+
+        public TextMeshProUGUI finishText;
+
+        public Material[] skins;
+
+        private AudioManager audioManager;
+
+        #endregion
+
+        private void Start()
         {
-            yield return null;
+            timerGame = FindObjectOfType<TimerGame>();
+        
+            pause.SetActive(false);
+            audioManager = FindObjectOfType<AudioManager>();
+        
+        
+            finishTab.SetActive(false);
+            ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
+
+            scoreToReach = FindObjectsOfType<Bottle>().Length;
+            canFinish = false;
+            mExit.sharedMaterial.color = Color.red;
+
+            StartCoroutine(PointRoutine());
         }
 
-        audioManager.PlayWinSound();
-        canFinish = true;
-        mExit.sharedMaterial.color = Color.green;
-    }
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.P))
+            {
+                PauseRektMe();
+            }
+        }
+
+        private void PauseRektMe()
+        {
+            pause.SetActive(true);
+            timerGame.isGameInPause = true;
+            timerGame.PauseTime();
+            //gameUI.SetActive(false);
+        }
+
+        private IEnumerator PointRoutine()
+        {
+            while (actualScore != scoreToReach)
+            {
+                yield return null;
+            }
+
+            audioManager.PlayWinSound();
+            canFinish = true;
+            mExit.sharedMaterial.color = Color.green;
+        }
     
-    public void Score()
-    {
-        actualScore++;
-    }
+        public void Score()
+        {
+            actualScore++;
+        }
 
-    public void FinishLevel()
-    {
-        canFinish = true;
-        finishText.text = "YOU WIN!";
-        ball.GetComponentInParent<CharacterController>().enabled = false;
-        ball.SetActive(false);
-        finishTab.SetActive(true);
-    }
+        public void FinishLevel()
+        {
+            canFinish = true;
+            finishText.text = "YOU WIN!";
+            ball.GetComponentInParent<CharacterController>().enabled = false;
+            ball.SetActive(false);
+            finishTab.SetActive(true);
+        }
 
-    public void Restart()
-    {
-        audioManager.PlayButtonPressed();
+        public void Restart()
+        {
+            audioManager.PlayButtonPressed();
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-    }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        }
 
-    public void BackLevel()
-    {
-        audioManager.PlayButtonPressed();
+        public void BackLevel()
+        {
+            audioManager.PlayButtonPressed();
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
-    }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        }
 
-    public void NextLevel()
-    {
-        audioManager.PlayButtonPressed();
+        public void NextLevel()
+        {
+            audioManager.PlayButtonPressed();
         
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
-    }
+            SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        }
 
-    public void QuitToMenu()
-    {
-        audioManager.PlayButtonPressed();
+        public void QuitToMenu()
+        {
+            audioManager.PlayButtonPressed();
         
-        SceneManager.LoadScene(0);
-    }
+            SceneManager.LoadScene(0);
+        }
 
-    public void InitDie()
-    {
-        StartCoroutine(Die());
-    }
+        public void Resume()
+        {
+            timerGame.isGameInPause = false;
+            pause.SetActive(false);
+            gameUI.SetActive(true);
+        }
 
-    private IEnumerator Die()
-    {
-        audioManager.PlayLoseSound();
+        public void InitDie()
+        {
+            StartCoroutine(Die());
+        }
+
+        private IEnumerator Die()
+        {
+            audioManager.PlayLoseSound();
         
-        finishText.text = "YOU DIED! RETRY.";
-        ball.GetComponentInParent<CharacterController>().enabled = false;
-        ball.SetActive(false);
+            finishText.text = "YOU DIED! RETRY.";
+            ball.GetComponentInParent<CharacterController>().enabled = false;
+            ball.SetActive(false);
 
-        yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(1f);
 
-        finishTab.SetActive(true);
+            finishTab.SetActive(true);
+        }
     }
-
 }

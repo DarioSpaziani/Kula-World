@@ -1,18 +1,20 @@
-using System;
 using UnityEngine;
 
-public class Exit : MonoBehaviour
+namespace _01_Scripts
 {
-    private AudioManager audioManager;
-    private void Awake()
+    public class Exit : MonoBehaviour
     {
-        audioManager = FindObjectOfType<AudioManager>();
-    }
+        private AudioManager audioManager;
+        private void Awake()
+        {
+            audioManager = FindObjectOfType<AudioManager>();
+        }
 
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Player") && Manager.Instance.canFinish) {
-            audioManager.PlayExitLevel();
-            Manager.Instance.FinishLevel();
+        private void OnTriggerEnter(Collider other) {
+            if (other.CompareTag("Player") && Manager.instance.canFinish) {
+                audioManager.PlayExitLevel();
+                Manager.instance.FinishLevel();
+            }
         }
     }
 }

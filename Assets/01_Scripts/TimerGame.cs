@@ -1,66 +1,80 @@
-using System;
 using System.Collections;
-using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
 
-public class TimerGame : MonoBehaviour
+namespace _01_Scripts
 {
-    private float initTime;
-    public int levelTime;
-
-    public bool isGameFinished;
-    
-    public bool isTimePaused;
-    
-    public TextMeshProUGUI timerText;
-
-    private Manager manager;
-
-    public SO_Bonus soBonus;
-
-    private void Start()
+    public class TimerGame : MonoBehaviour
     {
-        manager = FindObjectOfType<Manager>();
-        StartCoroutine(TimeRoutine());
-    }
+        private float initTime;
+        
+        public int levelTime;
 
+        public bool isGameFinished;
+        public bool isTimePaused;
+        public bool isGameInPause;
 
-    private IEnumerator TimeRoutine()
-    {
-        initTime = Time.time;
+        public TextMeshProUGUI timerText;
 
-        while (Time.time < levelTime + initTime)
+        private Manager manager;
+
+        public SO_Bonus soBonus;
+
+        private void Start()
         {
-            if (!isTimePaused)
+            manager = FindObjectOfType<Manager>();
+            StartCoroutine(TimeRoutine());
+        }
+        
+        private IEnumerator TimeRoutine()
+        {
+            initTime = Time.time;
+
+            while (Time.time < levelTime + initTime)
             {
-                timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
+                if (!isTimePaused && !isGameInPause)
+                {
+                    timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
+                }
+                else if (!isTimePaused && isGameInPause)
+                {
+                    timerText.text = "TIME: " + 0;
+                }
+                else if(isTimePaused && !isGameInPause)
+                {
+                    timerText.text = "BONUS TIME!!";
+                }
+
+                yield return null;
             }
-            else
-                timerText.text = "BONUS TIME!!";
 
-            yield return null;
+            if (!isGameFinished)
+            {
+                manager.ball.GetComponentInParent<CharacterController>().enabled = false;
+                manager.ball.SetActive(false);
+                manager.finishTab.SetActive(true);
+                manager.finishText.text = "TIME IS OVER!";
+            
+            }
         }
 
-        if (!isGameFinished)
+        public void BonusTime()
         {
-            manager.ball.GetComponentInParent<CharacterController>().enabled = false;
-            manager.ball.SetActive(false);
-            manager.finishTab.SetActive(true);
-            manager.finishText.text = "TIME IS OVER!";
+            isTimePaused = true;
+            StartCoroutine(StopPause(soBonus.bonusTime));
         }
-    }
-    
-    public void PauseTime()
-    {
-        isTimePaused = true;
-        StartCoroutine(StopPause());
-    }
-    
-    private IEnumerator StopPause()
-    {
-        yield return new WaitForSeconds(soBonus.bonusTime);
-        isTimePaused = false;
-        initTime += soBonus.bonusTime;
+
+        public void PauseTime()
+        {
+            isGameInPause = true;
+            StartCoroutine(StopPause(10f));
+        }
+
+        private IEnumerator StopPause(float time)
+        {
+            yield return new WaitForSeconds(time);
+            isTimePaused = false;
+            initTime += soBonus.bonusTime;
+        }
     }
 }

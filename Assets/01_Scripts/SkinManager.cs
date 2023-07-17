@@ -1,25 +1,27 @@
-
 using UnityEngine;
 
-public class SkinManager : MonoBehaviour
+namespace _01_Scripts
 {
-    public static int skinSelected;
-    public GameObject[] selectors;
-    
-
-    private void Start()
+    public class SkinManager : MonoBehaviour
     {
-        selectors[0].SetActive(true);
-        skinSelected = 0;
-    }
+        public static int skinSelected;
+        
+        public GameObject[] selectors;
 
-    public void SetSkin(int skinNumber) {
-        skinSelected = skinNumber;
-        selectors[skinNumber].SetActive(true);
+        private void Start()
+        {
+            selectors[0].SetActive(true);
+            skinSelected = 0;
+        }
 
-        for (int i = 0; i < selectors.Length; i++) {
-            if (i != skinNumber) {
-                selectors[i].SetActive(false);
+        public void SetSkin(int skinNumber) {
+            skinSelected = skinNumber;
+            selectors[skinNumber].SetActive(true);
+
+            for (int i = 0; i < selectors.Length; i++) {
+                if (i != skinNumber) {
+                    selectors[i].SetActive(false);
+                }
             }
         }
     }

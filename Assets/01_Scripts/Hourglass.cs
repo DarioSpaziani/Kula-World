@@ -1,22 +1,26 @@
 using UnityEngine;
 
-public class Hourglass : MonoBehaviour
+namespace _01_Scripts
 {
-    private TimerGame timerGame;
-    private AudioManager audioManager;
-    
-    private void Start()
+    public class Hourglass : MonoBehaviour
     {
-        timerGame = FindObjectOfType<TimerGame>();
-        audioManager = FindObjectOfType<AudioManager>();
-    }
-
-    private void OnTriggerEnter(Collider other) {
-        if (other.CompareTag("Player"))
+        private TimerGame timerGame;
+        
+        private AudioManager audioManager;
+    
+        private void Start()
         {
-            audioManager.PlayBonusSound();
-            timerGame.PauseTime();
-            Destroy(gameObject);
+            timerGame = FindObjectOfType<TimerGame>();
+            audioManager = FindObjectOfType<AudioManager>();
+        }
+
+        private void OnTriggerEnter(Collider other) {
+            if (other.CompareTag("Player"))
+            {
+                audioManager.PlayBonusSound();
+                timerGame.BonusTime();
+                Destroy(gameObject);
+            }
         }
     }
 }
