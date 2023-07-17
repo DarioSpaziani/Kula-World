@@ -62,7 +62,6 @@ namespace _01_Scripts
         {
             pause.SetActive(true);
             timerGame.isGameInPause = true;
-            timerGame.PauseTime();
             //gameUI.SetActive(false);
         }
 

@@ -32,18 +32,12 @@ namespace _01_Scripts
 
             while (Time.time < levelTime + initTime)
             {
-                if (!isTimePaused && !isGameInPause)
+                if (!isTimePaused)
                 {
                     timerText.text = "TIME: " + (levelTime + initTime - Time.time).ToString("0.00");
                 }
-                else if (!isTimePaused && isGameInPause)
-                {
-                    timerText.text = "TIME: " + 0;
-                }
-                else if(isTimePaused && !isGameInPause)
-                {
+                else
                     timerText.text = "BONUS TIME!!";
-                }
 
                 yield return null;
             }
@@ -61,18 +55,12 @@ namespace _01_Scripts
         public void BonusTime()
         {
             isTimePaused = true;
-            StartCoroutine(StopPause(soBonus.bonusTime));
+            StartCoroutine(StopPause());
         }
 
-        public void PauseTime()
+        private IEnumerator StopPause()
         {
-            isGameInPause = true;
-            StartCoroutine(StopPause(10f));
-        }
-
-        private IEnumerator StopPause(float time)
-        {
-            yield return new WaitForSeconds(time);
+            yield return new WaitForSeconds(soBonus.bonusTime);
             isTimePaused = false;
             initTime += soBonus.bonusTime;
         }
