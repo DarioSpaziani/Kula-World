@@ -7,14 +7,19 @@ namespace _01_Scripts
         public static int skinSelected;
         
         public GameObject[] selectors;
+        
+        private AudioManager audioManager;
 
         private void Start()
         {
+            audioManager = FindObjectOfType<AudioManager>();
             selectors[0].SetActive(true);
             skinSelected = 0;
         }
 
-        public void SetSkin(int skinNumber) {
+        public void SetSkin(int skinNumber)
+        {
+            audioManager.PlayButtonPressed();
             skinSelected = skinNumber;
             selectors[skinNumber].SetActive(true);
 

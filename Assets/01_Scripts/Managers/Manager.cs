@@ -20,6 +20,8 @@ namespace _01_Scripts
         public GameObject ball;
         public GameObject gameUI;
         public GameObject pause;
+        public GameObject options;
+        
         private TimerGame timerGame;
 
         public MeshRenderer mExit;
@@ -35,11 +37,12 @@ namespace _01_Scripts
         private void Start()
         {
             timerGame = FindObjectOfType<TimerGame>();
-        
+            
+            options.SetActive(false);
             pause.SetActive(false);
+            
             audioManager = FindObjectOfType<AudioManager>();
-        
-        
+
             finishTab.SetActive(false);
             ball.GetComponent<MeshRenderer>().sharedMaterial = skins[SkinManager.skinSelected];
 
@@ -124,6 +127,18 @@ namespace _01_Scripts
             timerGame.isGameInPause = false;
             pause.SetActive(false);
             gameUI.SetActive(true);
+        }
+
+        public void Options()
+        {
+            pause.SetActive(false);
+            options.SetActive(true);
+        }
+
+        public void BackToMenu()
+        {
+            options.SetActive(false);
+            pause.SetActive(true);
         }
 
         public void InitDie()
