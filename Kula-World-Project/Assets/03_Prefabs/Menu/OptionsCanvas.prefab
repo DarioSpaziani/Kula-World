@@ -163,6 +163,7 @@ GameObject:
   - component: {fileID: 626861614181038365}
   - component: {fileID: 2124648372846323807}
   - component: {fileID: 4253623616036672545}
+  - component: {fileID: 5493888679800942255}
   m_Layer: 5
   m_Name: OptionsCanvas
   m_TagString: Untagged
@@ -184,7 +185,7 @@ RectTransform:
   m_Children:
   - {fileID: 829022721826837523}
   m_Father: {fileID: 0}
-  m_RootOrder: 4
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
@@ -254,6 +255,21 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5493888679800942255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 375263689013914035}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b64360f45ca961409fc38046c074e62, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  sliderMusic: {fileID: 456867952619277754}
+  sliderSfx: {fileID: 456867952619277754}
+  audioMixer: {fileID: 24100000, guid: 0795d4d7f1f482947b2a8dffb101ab88, type: 2}
 --- !u!1 &387269930047615768
 GameObject:
   m_ObjectHideFlags: 0
@@ -1353,7 +1369,6 @@ GameObject:
   - component: {fileID: 9141135930186825630}
   - component: {fileID: 8740509959599537236}
   - component: {fileID: 950005065435012743}
-  - component: {fileID: 5219431453902503761}
   m_Layer: 5
   m_Name: OptionsMenuUI
   m_TagString: Untagged
@@ -1448,21 +1463,6 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
---- !u!114 &5219431453902503761
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 8514774871840378669}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b64360f45ca961409fc38046c074e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sliderMusic: {fileID: 456867952619277754}
-  sliderSfx: {fileID: 6320784052752131550}
-  audioMixer: {fileID: 24100000, guid: 0795d4d7f1f482947b2a8dffb101ab88, type: 2}
 --- !u!1 &8561249293635156672
 GameObject:
   m_ObjectHideFlags: 0
