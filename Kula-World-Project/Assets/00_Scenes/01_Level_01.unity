@@ -823,6 +823,30 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2582883184868676501, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1765009397}
+    - target: {fileID: 2582883184868676501, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: QuitToMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 2582883184868676501, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _01_Scripts.Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123407873828575317, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1765009397}
+    - target: {fileID: 4123407873828575317, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Restart
+      objectReference: {fileID: 0}
+    - target: {fileID: 4123407873828575317, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _01_Scripts.Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
     - target: {fileID: 4246746631640048693, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
       propertyPath: m_Name
       value: PauseCanvas
@@ -910,6 +934,30 @@ PrefabInstance:
     - target: {fileID: 4272320531396024409, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451290426177589975, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1765009397}
+    - target: {fileID: 4451290426177589975, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Options
+      objectReference: {fileID: 0}
+    - target: {fileID: 4451290426177589975, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _01_Scripts.Manager, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657837136920795270, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1765009397}
+    - target: {fileID: 4657837136920795270, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: Resume
+      objectReference: {fileID: 0}
+    - target: {fileID: 4657837136920795270, guid: ce8856cbcd7209c4bb8f6beb41d3b7bd, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _01_Scripts.Manager, Assembly-CSharp
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
