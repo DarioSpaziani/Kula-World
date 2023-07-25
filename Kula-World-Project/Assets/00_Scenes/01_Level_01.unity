@@ -601,6 +601,10 @@ PrefabInstance:
       propertyPath: m_AnchorMin.x
       value: 0.49995
       objectReference: {fileID: 0}
+    - target: {fileID: 5493888679800942255, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
+      propertyPath: sliderSfx
+      value: 
+      objectReference: {fileID: 457876255}
     - target: {fileID: 6218424026323333466, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
       propertyPath: m_AnchorMax.x
       value: 0.49995
@@ -641,10 +645,7 @@ PrefabInstance:
     - {fileID: 5219431453902503761, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 375263689013914035, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 457876259}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
 --- !u!114 &457876255 stripped
 MonoBehaviour:
@@ -673,26 +674,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8514774871840378669, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
   m_PrefabInstance: {fileID: 457876254}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &457876258 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 375263689013914035, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-  m_PrefabInstance: {fileID: 457876254}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &457876259
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 457876258}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b64360f45ca961409fc38046c074e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sliderMusic: {fileID: 457876256}
-  sliderSfx: {fileID: 457876255}
-  audioMixer: {fileID: 24100000, guid: 0795d4d7f1f482947b2a8dffb101ab88, type: 2}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

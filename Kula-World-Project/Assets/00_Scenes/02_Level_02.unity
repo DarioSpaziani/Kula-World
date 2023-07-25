@@ -450,58 +450,13 @@ PrefabInstance:
     - {fileID: 5219431453902503761, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 375263689013914035, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 626859511}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
 --- !u!1 &626859507 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8514774871840378669, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
   m_PrefabInstance: {fileID: 626859506}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &626859508 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6320784052752131550, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-  m_PrefabInstance: {fileID: 626859506}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &626859509 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 456867952619277754, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-  m_PrefabInstance: {fileID: 626859506}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!1 &626859510 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 375263689013914035, guid: 845dc1503413e144c9eb698c2d90a987, type: 3}
-  m_PrefabInstance: {fileID: 626859506}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &626859511
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 626859510}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3b64360f45ca961409fc38046c074e62, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  sliderMusic: {fileID: 626859509}
-  sliderSfx: {fileID: 626859508}
-  audioMixer: {fileID: 24100000, guid: 0795d4d7f1f482947b2a8dffb101ab88, type: 2}
 --- !u!1001 &709785020
 PrefabInstance:
   m_ObjectHideFlags: 0
