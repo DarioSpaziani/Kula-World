@@ -740,9 +740,17 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9194308714315155666, guid: 20d6616d893bb8949834af814e6198d0, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9194308714315155666, guid: 20d6616d893bb8949834af814e6198d0, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 9194308714315155667, guid: 20d6616d893bb8949834af814e6198d0, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9194308714366022544, guid: 20d6616d893bb8949834af814e6198d0, type: 3}
       propertyPath: m_AnchorMax.y
@@ -1172,13 +1180,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1070263941}
+  serializedVersion: 2
   m_LocalRotation: {x: 0.40821788, y: -0.23456968, z: 0.10938163, w: 0.8754261}
   m_LocalPosition: {x: 0, y: 3, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!114 &1070263944
 MonoBehaviour:
@@ -1587,3 +1595,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 042892e32df3d7245b55f2fa7b761220, type: 3}
+--- !u!1660057539 &9223372036854775807
+SceneRoots:
+  m_ObjectHideFlags: 0
+  m_Roots:
+  - {fileID: 1070263943}
+  - {fileID: 979862856}
+  - {fileID: 910845453}
+  - {fileID: 494846403}
+  - {fileID: 709785020}
+  - {fileID: 2055009272}
+  - {fileID: 2144479023}
+  - {fileID: 626859506}
+  - {fileID: 957680970}
+  - {fileID: 509566063994486640}
