@@ -130,6 +130,7 @@ namespace _01_Scripts
         public void Resume()
         {
             timerGame.isGameInPause = false;
+            timerGame.PauseGame();
             pause.SetActive(false);
             gameUI.SetActive(true);
             characterControls.SetActive(true);
@@ -137,6 +138,8 @@ namespace _01_Scripts
 
         public void Options()
         {
+            timerGame.isGameInPause = true;
+            timerGame.PauseGame();
             pause.SetActive(false);
             options.SetActive(true);
             characterControls.SetActive(false);

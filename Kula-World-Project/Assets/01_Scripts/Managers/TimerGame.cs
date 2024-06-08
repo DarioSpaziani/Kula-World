@@ -58,6 +58,18 @@ namespace _01_Scripts
             StartCoroutine(StopPause());
         }
 
+        public void PauseGame()
+        {
+            if (isGameInPause)
+            {
+                Time.timeScale = 0;
+            }
+            else
+            {
+                Time.timeScale = 1;
+            }
+        }
+
         private IEnumerator StopPause()
         {
             yield return new WaitForSeconds(soBonus.bonusTime);
