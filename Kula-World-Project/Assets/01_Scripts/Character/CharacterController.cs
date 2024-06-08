@@ -64,6 +64,16 @@ namespace _01_Scripts
             }
         }
 
+        public void MoveContinuously()
+        {
+            InvokeRepeating("Move", 0.1f, 0.1f);
+        }
+
+        public void StopMoving()
+        {
+            CancelInvoke("Move");
+        }
+
         #region Raycast
 
         private void RecalculateRay()
