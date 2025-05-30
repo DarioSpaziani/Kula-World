@@ -39,8 +39,14 @@ namespace _01_Scripts
         private void Start()
         {
             timerGame = FindObjectOfType<TimerGame>();
-            
-            characterControls.SetActive(true);
+
+            characterControls.SetActive(false);
+
+#if UNITY_ANDROID || UNITY_IOS
+        // If on mobile, disable the controls menu panel
+        characterControls.SetActive(true);
+#endif
+
             options.SetActive(false);
             pause.SetActive(false);
             
@@ -58,7 +64,7 @@ namespace _01_Scripts
 
         private void Update()
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            if (Input.GetKeyDown(KeyCode.P) || Input.GetKeyDown(KeyCode.Escape))
             {
                 PauseRektMe();
             }
@@ -69,7 +75,10 @@ namespace _01_Scripts
             pause.SetActive(true);
             timerGame.isGameInPause = true;
             gameUI.SetActive(false);
+
+#if UNITY_ANDROID || UNITY_IOS
             characterControls.SetActive(false);
+#endif
         }
 
         private IEnumerator PointRoutine()
@@ -96,8 +105,13 @@ namespace _01_Scripts
             ball.GetComponentInParent<CharacterController>().enabled = false;
             ball.SetActive(false);
             finishTab.SetActive(true);
+
+#if UNITY_ANDROID || UNITY_IOS
             characterControls.SetActive(false);
+#endif
         }
+
+        #region Scene Management
 
         public void Restart()
         {
@@ -133,7 +147,10 @@ namespace _01_Scripts
             timerGame.PauseGame();
             pause.SetActive(false);
             gameUI.SetActive(true);
+
+#if UNITY_ANDROID || UNITY_IOS
             characterControls.SetActive(true);
+#endif
         }
 
         public void Options()
@@ -142,7 +159,10 @@ namespace _01_Scripts
             timerGame.PauseGame();
             pause.SetActive(false);
             options.SetActive(true);
+
+#if UNITY_ANDROID || UNITY_IOS
             characterControls.SetActive(false);
+#endif
         }
 
         public void BackToMenu()
@@ -168,5 +188,7 @@ namespace _01_Scripts
 
             finishTab.SetActive(true);
         }
+
+        #endregion
     }
 }
