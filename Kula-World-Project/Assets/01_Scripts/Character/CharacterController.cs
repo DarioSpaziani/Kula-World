@@ -96,12 +96,12 @@ namespace _01_Scripts
 
             if (Physics.Raycast(start, dir, out RaycastHit _, length, layerMask))
             {
-                Debug.DrawRay(start, dir * 1000, Color.red);
+                //Debug.DrawRay(start, dir * 1000, Color.red);
                 return true;
             }
             else
             {
-                Debug.DrawRay(start, dir * 1000, Color.green);
+                //Debug.DrawRay(start, dir * 1000, Color.green);
                 return false;
             }
         }
@@ -279,6 +279,8 @@ namespace _01_Scripts
                 yield return null;
             }
 
+
+
             targetPos = transform.position - transform.up * offset;
             while (Vector3.Distance(transform.position, targetPos) > 0.0001f)
             {
@@ -295,6 +297,8 @@ namespace _01_Scripts
 
         private IEnumerator SmoothMoveAndJump(float jumpOffset, float moveOffset)
         {
+
+
             if (isMoving)
                 yield break;
 
@@ -365,7 +369,16 @@ namespace _01_Scripts
 
         public void JumpAndMove(float offset)
         {
-            StartCoroutine(SmoothMoveAndJump(offset, offset * 2));
+            RaycastHit hit;
+            if (Physics.Raycast(transform.position, transform.right, out hit, 1f, LayerMask.GetMask("Ground")))
+            {
+                StartCoroutine(SmoothJump(2));
+            }
+            else
+            {
+                StartCoroutine(SmoothMoveAndJump(offset, offset * 2));
+            }
+
         }
 
         #endregion
